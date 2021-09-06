@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    moulinettes (0.1.0)
+      tty-progressbar
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    strings-ansi (0.2.0)
+    tty-cursor (0.7.1)
+    tty-progressbar (0.18.2)
+      strings-ansi (~> 0.2)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      unicode-display_width (>= 1.6, < 3.0)
+    tty-screen (0.8.1)
+    unicode-display_width (2.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  moulinettes!
+
+BUNDLED WITH
+   2.2.26
