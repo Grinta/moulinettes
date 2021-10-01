@@ -1,4 +1,4 @@
 require "moulinettes/moulinette_on"
 
-class Moulinettes
+module Moulinettes
 end

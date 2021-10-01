@@ -1,9 +1,9 @@
 require "tty-progressbar"
 
-class Moulinettes
+module Moulinettes
   PROGRESS_BAR_WIDTH = 100
 
-  def self.moulinette_on(subjects)
+  def moulinette_on(subjects)
     bar = TTY::ProgressBar.new("[:bar] :percent", total: subjects.size, width: PROGRESS_BAR_WIDTH, output: $stdout)
 
     subjects.find_each do |subject|

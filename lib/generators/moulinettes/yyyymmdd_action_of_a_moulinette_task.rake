@@ -1,8 +1,7 @@
-require "moulinettes"
-
 namespace :moulinettes do
   desc "A description of the task goes here"
   task action_of_a_moulinette_task: :environment do
+    include Moulinettes
 
     # Edit this query to find migration task subjects
     subjects = YourModel.where(something: "to_find")
