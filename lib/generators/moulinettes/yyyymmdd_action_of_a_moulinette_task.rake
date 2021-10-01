@@ -1,3 +1,5 @@
+require "moulinettes"
+
 namespace :moulinettes do
   desc "A description of the task goes here"
   task action_of_a_moulinette_task: :environment do
