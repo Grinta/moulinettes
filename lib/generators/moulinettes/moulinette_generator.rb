@@ -1,6 +1,6 @@
 require "rails/generators"
 
-class Moulinettes
+module Moulinettes
   module Generators
     class MoulinetteGenerator < Rails::Generators::NamedBase
       desc "This generator creates a task file following the moulinettes template"
