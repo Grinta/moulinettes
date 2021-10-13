@@ -11,6 +11,10 @@ module Moulinettes
         copy_file "yyyymmdd_action_of_a_moulinette_task.rake", filepath
         gsub_file filepath, "action_of_a_moulinette_task", task_name
         gsub_file filepath, 'desc "A description of the task goes here"', task_description
+
+        if options[:vscode].present?
+          `code #{filepath}`
+        end
       end
 
       def timestamp
