@@ -10,7 +10,7 @@ module Moulinettes
       def copy_initializer_file
         copy_file "yyyymmdd_action_of_a_moulinette_task.rake", filepath
         gsub_file filepath, "action_of_a_moulinette_task", task_name
-        gsub_file filepath, 'desc "A description of the task goes here"', task_description
+        gsub_file filepath, "A description of the task goes here", task_description
       end
 
       def timestamp
@@ -22,7 +22,7 @@ module Moulinettes
       end
 
       def task_description
-        'desc "' + task_name.humanize + '"'
+        task_name.humanize
       end
 
       def filename
@@ -34,7 +34,7 @@ module Moulinettes
         unless File.directory?(dirname)
           FileUtils.mkdir_p(dirname)
         end
-          "#{dirname}/#{filename}"
+        "#{dirname}/#{filename}"
       end
     end
   end
