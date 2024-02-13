@@ -1,8 +1,10 @@
 # Moulinettes
 
-<img src="logo.png" alt="moulinettes logo" title="moulinettes logo" height="250">
+<div align="center">
+  <img src="logo.png" alt="moulinettes logo" title="moulinettes logo" height="300">
+  <p align="center">A simple template to run any data migrations within your Rails app.</p>
+</div>
 
-A simple template to run any data migrations within your Rails app.
 
 
 ## Installation
