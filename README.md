@@ -27,6 +27,13 @@ Generate a new moulinette using the generator:
 
 This will generate a new file in `lib/tasks/moulinettes` using the [template provided in the gem](lib/generators/moulinettes/yyyymmdd_action_of_a_moulinette_task.rake).
 
+### Options
+
+You can also pass the following options to the generator:
+
+- `--editor` or `-e` to specify the editor to be used to open the file. Default is `$EDITOR`.
+- `--open` or `-o` to flag the file to be opened in your default editor after generation. Default is `true`.
+
 You can then run the task using the following command:
 
 ```bash
