@@ -15,6 +15,8 @@ module Moulinettes
         gsub_file filepath, "action_of_a_moulinette_task", task_name
         gsub_file filepath, "A description of the task goes here", task_description
 
+        print_warnings
+
         if options["open"]
           system("#{options["editor"]} #{filepath}")
         end
@@ -42,6 +44,18 @@ module Moulinettes
           FileUtils.mkdir_p(dirname)
         end
         "#{dirname}/#{filename}"
+      end
+
+      private
+
+      def print_warnings
+        puts <<~HEREDOC
+          REMEMBER:
+          - Don't you dare do an update_all. It would break PgSQL and the universe.
+          - Use moulinette_on subjects helper, it will correctly loop over objects and print progress
+          - Create one task for each thing. Make sure it can be run twice.
+          - Print feedback as much as possible to show what's going on.
+        HEREDOC
       end
     end
   end

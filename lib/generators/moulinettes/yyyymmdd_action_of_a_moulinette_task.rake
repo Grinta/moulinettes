@@ -11,12 +11,6 @@ namespace :moulinettes do
       progress_bar.log("#{subject.id}")
     end
 
-    # REMEMBER:
-    # - Don't you dare do an update_all. It would break PgSQL and the universe.
-    # - Use moulinette_on subjects helper, it will correctly loop over objects and print progress
-    # - Create one task for each thing. Make sure it can be run twice.
-    # - Print feedback as much as possible to show what's going on.
-
     puts "Done."
   end
 end
