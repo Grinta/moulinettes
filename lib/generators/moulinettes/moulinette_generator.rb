@@ -3,7 +3,7 @@ require "rails/generators"
 module Moulinettes
   module Generators
     class MoulinetteGenerator < Rails::Generators::NamedBase
-      class_option :editor, type: :string, default: $EDITOR, desc: "Open the generated file in the specified editor"
+      class_option :editor, type: :string, default: ENV["EDITOR"], desc: "Open the generated file in the specified editor"
       class_option :open, type: :boolean, default: true, desc: "Open the generated file in your editor"
       
       desc "This generator creates a task file following the moulinettes template"
